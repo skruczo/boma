@@ -10,8 +10,18 @@ html {
 }
 
 body {
+  position: relative;
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
+}
+
+[id] {
+  scroll-margin-top: 79px;
+}
+@media (min-width: 992px) {
+  [id] {
+    scroll-margin-top: 69px;
+  }
 }
 
 .hero-shadow {
@@ -20,7 +30,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: -1;
 }
 
@@ -99,4 +109,15 @@ body {
 
 .team .card-title {
   font-size: 2rem;
+}
+/* kontakt */
+
+.contact h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact .submit-btn {
+  font-size: 1.6rem;
 }
